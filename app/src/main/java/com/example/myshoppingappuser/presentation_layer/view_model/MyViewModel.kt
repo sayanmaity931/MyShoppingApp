@@ -423,7 +423,7 @@ class MyViewModel @Inject constructor(
                         _cartProducts.value = GetCartState(error = it.exception, isLoading = false)
                     }
                     is State.Loading -> {
-                        _cartProducts.value = GetCartState(isLoading = false)
+                        _cartProducts.value = GetCartState(isLoading = true)
                     }
                 }
             }
